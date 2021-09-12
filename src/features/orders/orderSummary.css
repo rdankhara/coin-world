@@ -1,0 +1,19 @@
+.orderSummaryContainer {
+    margin: 10px;
+    border: 1px solid black;
+    display: grid;
+    width: 500px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.summaryHeader {
+    display: inline-flex;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: greenyellow;
+    align-items: center;
+    justify-content: center;
+}

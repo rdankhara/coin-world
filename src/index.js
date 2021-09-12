@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import {Provider} from 'react-redux';
+import {appState} from "./app/store";
+import {CoinBoard} from "./features/coinBoard/coinBoard";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Provider store={appState} >
+        <CoinBoard />
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
